@@ -71,22 +71,16 @@ function captchaLogin(req, res, next) {
 
 //_______________________ ┏ Router ┓ _______________________\\
 
-router.get("/login", recaptcha.middleware.render, (req, res) => {
+router.get("/login", (req, res) => {
   if (req.isAuthenticated()) {
     res.redirect("/dashboard");
   } else {
-    res.render("login", {
-      //csrfToken: req.csrfToken(),
-      recaptcha: res.recaptcha,
-    });
+    res.render("login");
   }
 });
 
 router.post(
-  "/login",
-  recaptcha.middleware.verify,
-  captchaLogin,
-  (req, res, next) => {
+  "/login", (req, res, next) => {
     passport.authenticate("local", (err, user, info) => {
       if (err) {
         return next(err);

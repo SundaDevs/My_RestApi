@@ -39,7 +39,7 @@
       border-top: 10px solid #79a6fe;
       border-bottom: 10px solid #8bd17c;
       width: 400px;
-      height: 500px;
+      height: 380px;
       box-shadow: 1px 1px 108.8px 19.2px rgb(25, 31, 53);
     }
 
@@ -154,7 +154,7 @@
     .dnthave {
       position: absolute;
       top: 92%;
-      left: 24%;
+      left: 35%;
     }
 
     [type="checkbox"]:checked+span:before {
@@ -216,8 +216,6 @@
 </head>
 
 <body>
-
-  <body id="particles-js"></body>
   <div class="animated bounceInDown">
     <div class="container">
       <span class="error animated tada" id="msg"></span>
@@ -227,12 +225,10 @@
         <i class="typcn typcn-eye" id="eye"></i>
         <input type="password" name="password" id="password" autocomplete="off" placeholder="Password" required />
         <i class="typcn typcn-eye" id="eye"></i>
-        <center><%- recaptcha %></center>
-        <i class="typcn typcn-eye" id="eye"></i>
         <a href="/forgot-password" class="forgetpass">Lupa Sandi?</a>
         <input type="submit" class="btn1" value="Login" />
       </form>
-      <a href="/signup" class="dnthave">Belum Punya Akun? Daftar</a>
+      <a href="/signup" class="dnthave">Belum Punya Akun?</a>
     </div>
     <div style="margin: 0 auto" class="col-12 col-md-6 col-lg-5 p-5 customborder">
       <% if( error !="" ){ %>
