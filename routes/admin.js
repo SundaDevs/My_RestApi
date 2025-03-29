@@ -267,7 +267,38 @@ router.get("/apidata/search/:_id", checkRole("admin"), checkRole("admin"), async
     res.status(500).json({ message: "Error fetching item", error });
   }
 });
+//_______________________ ┏ Perbaikan Oleh Gemini ┓ _______________________\\
+router.get("/data", checkRole("admin"), async (req, res) => {
+  try {
+    const apiData = await listApi.find().lean(); // Gunakan .lean() untuk mendapatkan objek JS biasa
+    const userData = await User.find().lean();
 
+    // Tambahkan properti 'type' untuk membedakan jenis data
+    const combinedData = [
+      ...apiData.map(item => ({ ...item, type: 'api' })),
+      ...userData.map(item => ({ ...item, type: 'user' })),
+    ];
+
+    let getinfo = await getApikey(req.user.id);
+    let { username, isVerified, email, role } = getinfo;
+
+    res.render("admin/data", {
+      username: username,
+      verified: isVerified,
+      email: email,
+      role: role,
+      data: combinedData,
+      messages: {
+        success: req.flash("success"),
+        error: req.flash("error"),
+      },
+    });
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    req.flash("error", "Gagal mengambil data.");
+    res.redirect("/admin"); // Atau rute lain yang sesuai
+  }
+});
 //_______________________ ┏ END ┓ _______________________\\
 
 module.exports = router;

@@ -1,0 +1,467 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>YK Project | ADMIN </title>
+  <meta name="description" content="Rest Api." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="images/icon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
+  <link href="plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.bundle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed aside-fixed aside-secondary-disabled">
+  <div class="d-flex flex-column flex-root">
+    <div class="page d-flex flex-row flex-column-fluid">
+      <div id="kt_aside" class="aside aside-extended bg-white" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+        <div class="aside-primary d-flex flex-column align-items-lg-center flex-row-auto">
+          <div class="aside-logo d-none d-lg-flex flex-column align-items-center flex-column-auto pt-10" id="kt_aside_logo">
+            <a href="#">
+              <img alt="Logo" src="images/logo.png" class="h-55px" />
+            </a>
+          </div>
+          <div class="aside-nav d-flex flex-column flex-lg-center flex-column-fluid w-100 pt-5 pt-lg-0" id="kt_aside_nav">
+            <!--begin::Primary menu-->
+            <div id="kt_aside_menu" class="menu menu-column menu-title-gray-600 menu-icon-gray-400 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-bold fs-5" data-kt-menu="true">
+              <div class="menu-item py-2">
+                <a class="menu-link active menu-center" href="/admin" title="Dashboard" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                  <span class="menu-icon me-0">
+                    <!--begin::Svg Icon | path: icons/duotone/Home/Home2.svg-->
+                    <span class="svg-icon svg-icon-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21.4622 10.699C21.4618 10.6986 21.4613 10.6981 21.4609 10.6977L13.3016 2.53955C12.9538 2.19165 12.4914 2 11.9996 2C11.5078 2 11.0454 2.1915 10.6974 2.5394L2.54246 10.6934C2.53971 10.6961 2.53696 10.699 2.53422 10.7018C1.82003 11.42 1.82125 12.5853 2.53773 13.3017C2.86506 13.6292 3.29739 13.8188 3.75962 13.8387C3.77839 13.8405 3.79732 13.8414 3.81639 13.8414H4.14159V19.8453C4.14159 21.0334 5.10833 22 6.29681 22H9.48897C9.81249 22 10.075 21.7377 10.075 21.4141V16.707C10.075 16.1649 10.516 15.7239 11.0582 15.7239H12.941C13.4832 15.7239 13.9242 16.1649 13.9242 16.707V21.4141C13.9242 21.7377 14.1866 22 14.5102 22H17.7024C18.8909 22 19.8576 21.0334 19.8576 19.8453V13.8414H20.1592C20.6508 13.8414 21.1132 13.6499 21.4613 13.302C22.1786 12.5844 22.1789 11.4171 21.4622 10.699V10.699Z" fill="#00B2FF" />
+                      </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                  </span>
+                </a>
+              </div>
+              <div data-kt-menu-trigger="click" data-kt-menu-placement="right-start" data-kt-menu-flip="bottom" class="menu-item py-2">
+                <span class="menu-link menu-center" title="Database" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+                  <span class="menu-icon me-0">
+                    <!--begin::Svg Icon | path: icons/duotone/Shopping/Chart.svg-->
+                    <span class="svg-icon svg-icon-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-fill" viewBox="0 0 16 16">
+                        <path d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223" />
+                        <path d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                        <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                        <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972" />
+                      </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                  </span>
+                </span>
+                <div class="menu-sub menu-sub-dropdown w-225px px-1 py-4">
+                  <div class="menu-item">
+                    <div class="menu-content">
+                      <span class="menu-section fs-5 fw-bolder ps-1 py-1">Database</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-link" href="/userdata">
+                      <span class="menu-bullet">
+                        <span class="bullet bullet-dot"></span>
+                      </span>
+                      <span class="menu-title">User Data</span>
+                    </a>
+                  </div>
+                  <div class="menu-item">
+                    <a class="menu-link" href="/apidata">
+                      <span class="menu-bullet">
+                        <span class="bullet bullet-dot"></span>
+                      </span>
+                      <span class="menu-title">API Data
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end::Primary menu-->
+          </div>
+          <!--end::Nav-->
+          <!-- Social-->
+          <div class="aside-footer d-flex flex-column align-items-center flex-column-auto" id="kt_aside_footer">
+            <div class="mb-7">
+              <button type="button" class="btn btm-sm btn-icon btn-color-gray-400 btn-active-color-primary btn-active-light" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="top-start" data-kt-menu-flip="top-end" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-dismiss="click" title="Social">
+                <span class="svg-icon svg-icon-2 svg-icon-lg-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <rect fill="#000000" opacity="0.3" x="4" y="4" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="4" y="10" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="10" y="4" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="10" y="10" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="16" y="4" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="16" y="10" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="4" y="16" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="10" y="16" width="4" height="4" rx="2" />
+                    <rect fill="#000000" x="16" y="16" width="4" height="4" rx="2" />
+                  </svg>
+                </span>
+              </button>
+              <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold w-200px" data-kt-menu="true">
+                <!--begin::Menu item-->
+                <div class="menu-item px-3">
+                  <div class="menu-content fs-6 text-dark fw-bolder px-3 py-4">
+                    Social
+                  </div>
+                </div>
+                <div class="separator mb-3 opacity-75"></div>
+                <div class="menu-item px-3">
+                  <a href="https://github.com/mrtakt" class="menu-link px-3" target="_blank">Github</a>
+                </div>
+                <div class="menu-item px-3">
+                  <a href="https://facebook.com/yukisubagja" class="menu-link px-3" target="_blank">Facebook</a>
+                </div>
+                <div class="menu-item px-3">
+                  <a href="https://twitter.com/extrasabar" class="menu-link px-3" target="_blank">Twitter</a>
+                </div>
+                <div class="menu-item px-3">
+                  <a href="https://Instagram.com/yuki21_" class="menu-link px-3" target="_blank">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+        <div id="kt_header" class="header" data-kt-sticky="true" data-kt-sticky-name="header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+          <div class="container-fluid d-flex align-items-stretch justify-content-between" id="kt_header_container">
+            <div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-2 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
+              <h1 class="text-dark fw-bolder my-1 fs-2">
+                YK Project
+                <small class="text-muted fs-6 fw-normal ms-1"></small>
+              </h1>
+              <ul class="breadcrumb fw-bold fs-base my-1">
+                <li class="breadcrumb-item text-muted">
+                  <a href="#" class="text-muted">Admin</a>
+                </li>
+                <li class="breadcrumb-item text-dark">User Data</li>
+              </ul>
+            </div>
+            <div class="d-flex d-lg-none align-items-center ms-n2 me-2">
+              <!--begin::Aside mobile toggle-->
+              <div class="btn btn-icon btn-active-icon-primary" id="kt_aside_toggle">
+                <!--begin::Svg Icon | path: icons/duotone/Text/Menu.svg-->
+                <span class="svg-icon svg-icon-2x">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect x="0" y="0" width="24" height="24" />
+                      <rect fill="#000000" x="4" y="5" width="16" height="3" rx="1.5" />
+                      <path d="M5.5,15 L18.5,15 C19.3284271,15 20,15.6715729 20,16.5 C20,17.3284271 19.3284271,18 18.5,18 L5.5,18 C4.67157288,18 4,17.3284271 4,16.5 C4,15.6715729 4.67157288,15 5.5,15 Z M5.5,10 L18.5,10 C19.3284271,10 20,10.6715729 20,11.5 C20,12.3284271 19.3284271,13 18.5,13 L5.5,13 C4.67157288,13 4,12.3284271 4,11.5 C4,10.6715729 4.67157288,10 5.5,10 Z" fill="#000000" opacity="0.3" />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <a href="/dashboard" class="d-flex align-items-center">
+                <img alt="Logo" src="images/logov.png" class="max-h-40px" />
+              </a>
+            </div>
+            <div class="d-flex align-items-stretch flex-shrink-0">
+              <div class="d-flex align-items-center ms-1 ms-lg-3" id="kt_header_user_menu_toggle">
+                <div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end" data-kt-menu-flip="bottom">
+                  <img src="images/kobeni.png" alt="metronic" />
+                </div>
+                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
+                  <div class="menu-item px-3">
+                    <div class="menu-content d-flex align-items-center px-3">
+                      <!--begin::Avatar-->
+                      <div class="symbol symbol-50px me-5">
+                        <img alt="Logo" src="images/kobeni.png" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <% if(!verified){ %>
+                        <span class="badge badge-light-danger fw-bolder fs-8 px-2 py-1 ms-2">Belum
+                          Verifikasi</span>
+                        <% }else{ %>
+                        <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">Terverifikasi</span>
+                        <% } %>
+                        <div class="fw-bolder d-flex align-items-center fs-5">
+                          <%= username %>
+                          <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2"></span>
+                        </div>
+                        <a href="#" class="fw-bold text-muted text-hover-primary fs-7">
+                          <%= email %>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="separator my-2"></div>
+                  <div class="menu-item px-5">
+                    <a href="/profile" class="menu-link px-5">Profile</a>
+                  </div>
+                  <div class="menu-item px-5">
+                    <a data-bs-toggle="modal" data-bs-target="#logout" class="menu-link px-5">Sign
+                      Out</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+          <div class="container" id="kt_content_container">
+            <div class="row g-5 gx-xxl-8 mb-xxl-3">
+              <div class="col-xxl-8">
+                <div class="card card-xxl-stretch mb-5 mb-xxl-8">
+                  <div class="card-header border-0 pt-5">
+                    <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-boldest fs-3 text-dark">Data</span>
+                        <span class="text-gray-400 mt-2 fw-bold fs-6">Pilih jenis data yang akan ditampilkan</span>
+                      </h3>
+                    <div style="margin: 0 auto" class="col-12 col-md-6 col-lg-5 p-5 customborder">
+                      <% if( error !="" ){ %>
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong> Error </strong>
+                        <%= error %>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                      <% } %> <% if( error_messages !="" ){ %>
+                      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong> Error </strong>
+                        <%= error_messages %>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                      <% } %> <% if( success_messages !="" ){ %>
+                      <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Berhasil</strong>
+                        <%= success_messages %>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>
+                      <% } %>
+                    </div>
+                    <div class="card-toolbar">
+                      <!--begin::Nav-->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newdata">
+                        Tambah Data
+                      </button>
+                    </div>
+                  </div>
+                  <!-- ==========================-->
+                  <div class="row p-0 px-9">
+                    <div class="py-10">
+                        <select id="dataType" class="form-select">
+                            <option value="api">API Data</option>
+                            <option value="user">User Data</option>
+                        </select>
+                        <br>
+                        <div class="table-responsive">
+                            <table class="table table-striped border gy-7 gs-7" id="dataTable">
+                              <thead>
+                                <tr class="fw-bold fs-6 text-gray-800 border-bottom-2 border-gray-200">
+                                  <!-- Header akan diisi oleh JavaScript -->
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- Data akan diisi oleh JavaScript -->
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Logout-->
+                <div class="modal fade" tabindex="-1" id="logout">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header bg-active-danger text-active-inverse-danger active">
+                        <h1 class="modal-title">Keluar</h1>
+                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                          <span class="svg-icon svg-icon-2x"></span>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                        <a class="btn btn-danger" href="/logout">Keluar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Logout-->
+                <!--Edit-->
+                <!-- Edit Modal -->
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><h5 class="modal-title" id="editModalLabel">Edit Data</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body"><form id="editModalForm"></form></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary" onclick="saveEdit()">Simpan Perubahan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                <!--End Edit-->
+                <!--NewData-->
+                <div class="modal fade" tabindex="-1" id="newdata">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Tambah Data</h5>
+                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                          <span class="svg-icon svg-icon-2x"></span>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <form action="/userdata/tambah" method="POST">
+                          <label for="exampleFormControlInput1" class="required form-label">Username</label>
+                          <input type="text" name="username" class="form-control form-control-solid required " placeholder="Username" />
+                          <label for="exampleFormControlInput1" class="required form-label">Email</label>
+                          <input type="text" name="email" class="form-control form-control-solid required " placeholder="Email" />
+                          <label for="exampleFormControlInput1" class="required form-label">Password</label>
+                          <input type="text" name="password" class="form-control form-control-solid required " placeholder="Password" />
+                          <label for="exampleFormControlInput1" class="required form-label">Pilih Role</label>
+                          <select class="form-select form-select-solid" aria-label=" Role" name="role">
+                            <option value="user">user</option>
+                            <option value="premium">premium</option>
+                            <option value="admin">admin</option>
+                          </select>
+                          <input type="hidden" name="isVerified" value=" true" />
+                          <label for="exampleFormControlInput1" class="required form-label">Apikey</label>
+                          <input type="text" name="apikey" class="form-control form-control-solid required " placeholder="apikey" />
+                          <label for="exampleFormControlInput1" class="required form-label">LimitApikey</label>
+                          <input type="text" name="limitApikey" class="form-control form-control-solid required " placeholder="limit" />
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End Newdata-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--begin::Javascript-->
+<!--  <script>
+    function openEditModal(_id) {
+      $.get(`/userdata/search/${_id}`, function(item) {
+        $('#_id').val(item._id);
+        $('#username').val(item.username);
+        $('#password').val(item.password);
+        $('#email').val(item.email);
+        $('#apikey').val(item.apikey);
+        $('#limitApikey').val(item.limitApikey);
+        $('#role').val(item.role);
+        $('#isVerified').val(item.isVerified);
+        $('#editdata').modal('show');
+      });
+    }
+  </script>
+-->
+  <script>
+    const dataTypeSelect = document.getElementById('dataType');
+    const dataTable = document.getElementById('dataTable');
+    const dataTableHead = dataTable.querySelector('thead tr');
+    const dataTableBody = dataTable.querySelector('tbody');
+    let allData = <%- JSON.stringify(data) %>;
+
+    function displayData(type) {
+      const filteredData = allData.filter(item => item.type === type);
+      dataTableHead.innerHTML = '';
+      dataTableBody.innerHTML = '';
+
+      if (type === 'api') {
+        dataTableHead.innerHTML = `
+          <th>Nama</th>
+          <th>Kategori</th>
+          <th>Premium</th>
+          <th>Metode</th>
+          <th>URL</th>
+          <th>Aksi</th>
+        `;
+        filteredData.forEach(item => {
+          const row = dataTableBody.insertRow();
+          row.innerHTML = `
+            <td>${item.nama}</td>
+            <td>${item.kategori}</td>
+            <td>${item.premium}</td>
+            <td>${item.metode}</td>
+            <td>${item.url}</td>
+            <td>
+              <button class="btn btn-warning" onclick="openEditModal('${item._id}', 'api')" data-bs-toggle="modal">Edit</button>
+              <form action="/apidata/delete/${item._id}" method="POST" style="display:inline;">
+                <button type="submit" class="btn btn-danger">Hapus</button>
+              </form>
+            </td>
+          `;
+        });
+      } else if (type === 'user') {
+        dataTableHead.innerHTML = `
+          <th>Username</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Limit</th>
+          <th>Aksi</th>
+        `;
+        filteredData.forEach(item => {
+          const row = dataTableBody.insertRow();
+          row.innerHTML = `
+            <td>${item.username}</td>
+            <td>${item.email}</td>
+            <td>${item.role}</td>
+            <td>${item.limitApikey}</td>
+            <td>
+              <button class="btn btn-warning" onclick="openEditModal('${item._id}', 'user')" data-bs-toggle="modal">Edit</button>
+              <form action="/userdata/delete/${item._id}" method="POST" style="display:inline;">
+                <button type="submit" class="btn btn-danger">Hapus</button>
+              </form>
+            </td>
+          `;
+        });
+      }
+    }
+
+    dataTypeSelect.addEventListener('change', (event) => {
+      displayData(event.target.value);
+    });
+
+    displayData(dataTypeSelect.value);
+
+    function openEditModal(id, type) {
+      currentEditId = id;
+      currentEditType = type;
+
+      const modal = new bootstrap.Modal(document.getElementById('editModal'));
+      const modalTitle = document.getElementById('editModalLabel');
+      const modalForm = document.getElementById('editModalForm');
+      modalTitle.textContent = `Edit ${type === 'api' ? 'API Data' : 'User Data'}`;
+      modalForm.innerHTML = ''; // Clear previous form content
+
+      const dataToEdit = allData.find(item => item._id === id && item.type === type);
+      if (dataToEdit) {
+        if (type === 'api') {
+          modalForm.innerHTML = `
+            <input type="hidden" id="edit_id" name="_id" value="${dataToEdit._id}">
+            <div class="mb-3"><label for="edit_nama" class="form-label">Nama</label><input type="text" class="form-control" id="edit_nama" name="nama" value="${dataToEdit.nama}"></div>
+            <div class="mb-3"><label for="edit_kategori" class="form-label">Kategori</label><input type="text" class="form-control" id="edit_kategori" name="kategori" value="${dataToEdit.kategori}"></div>
+            <div class="mb-3"><label for="edit_premium" class="form-label">Premium</label><input type="text" class="form-control" id="edit_premium" name="premium" value="${dataToEdit.premium}"></div>
+          `;
+        } else if (type === 'user') {
+          modalForm.innerHTML = `
+            <input type="hidden" id="edit_id" name="_id" value="${dataToEdit._id}">
+            <div class="mb-3"><label for="edit_username" class="form-label">Username</label><input type="text" class="form-control" id="edit_username" name="username" value="${dataToEdit.username}"></div>
+            <div class="mb-3"><label for="edit_email" class="form-label">Email</label><input type="email" class="form-control" id="edit_email" name="email" value="${dataToEdit.email}"></div>
+          `;
+        }
+        modal.show();
+      }
+    }
+  </script>
+  <!--begin::Global Javascript Bundle(used by all pages)-->
+  <script src="plugins/plugins.bundle.js"></script>
+  <script src="js/scripts.bundle.js"></script>
+  <!--end::Global Javascript Bundle-->
+  <!--begin::Page Custom Javascript(used by this page)-->
+  <script src="js/custom/widgets.js"></script>
+  <!--end::Page Custom Javascript-->
+  <!--end::Javascript-->
+</body>
+</html>
